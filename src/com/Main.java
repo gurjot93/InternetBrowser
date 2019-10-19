@@ -42,6 +42,7 @@ public class Main extends Application {
         addressField = new TextField("Enter Web address here...");
         addressField.setPrefColumnCount(50); //make the field at least 50 columns wide.
 
+        addressField.setOnAction(go);
         //Add all out navigation nodes to the vbox.
         hBox.getChildren().addAll(reloadButton, goButton, addressField);
 
